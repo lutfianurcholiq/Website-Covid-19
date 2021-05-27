@@ -1,0 +1,114 @@
+/* import google font */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+header{
+    display: inline;
+}
+header img{
+    margin: 0;
+}
+nav {
+    /* background-color: #e6e4e6; */
+    transition: background-color 0.4s ease-out;
+    padding: 2px;
+    position: fixed;
+    top: 0;
+    transition: 0.5s;
+    margin: 0 auto;
+    width: 100%;
+}
+nav ul{
+    text-align: right;
+    margin-left: 100px;
+}
+nav li{
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+    text-decoration: none;
+}
+nav.scroll{
+    background-color: #d8e3e7;
+    color: white;
+}
+nav a{
+    font-size: 18px;
+    color: #325288;
+    text-decoration: none;
+
+}
+nav a:hover{
+    /*color: #801c28;*/
+    font-weight: bold;
+}
+main{
+    padding: 20px;
+    overflow: auto;
+}
+p{
+    text-indent: 50px;
+    word-spacing: 5px;
+    text-align: justify;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+h2, h3{
+    font-weight: 600;
+}
+footer{
+    background-color: #e0e2e4;
+    color: #b81c2f;
+    padding: 10px;
+    text-align: center;
+}
+.profile img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+.card-profile{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 70%;
+}
+.img-article{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+#content{
+    float: left;
+    width: 75%;
+}
+
+.profile header {
+    text-align: center;
+}
+aside{
+    float: right;
+    width: 25%;
+    padding-left: 20px ;
+}
+@media screen and (max-width: 992px) {
+    #content,
+    aside {
+        padding: 0;
+        width: 100%;
+    }
+}
